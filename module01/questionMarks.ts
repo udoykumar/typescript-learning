@@ -28,18 +28,18 @@ const biyerJonnoEligible = (age: number) => {
 
 // Optional chaining
 
-const user: {
-  address: {
+const userss: {
+  currentAddress: {
     city: string;
     town: string;
     postcode: string;
   };
 } = {
-  address: {
+  currentAddress: {
     city: "Dhaka",
     town: "Banani",
     postcode: "23423",
   },
 };
-const postcode = user?.address?.postcode;
+const postcode = userss?.currentAddress?.postcode;
 console.log(postcode);

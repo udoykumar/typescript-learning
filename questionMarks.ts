@@ -38,6 +38,7 @@ const user: {
   address: {
     city: "Dhaka",
     town: "Banani",
+    postcode: "23423",
   },
 };
 const postcode = user?.address?.postcode;

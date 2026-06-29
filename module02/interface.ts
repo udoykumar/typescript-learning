@@ -3,12 +3,31 @@ type User = {
   age: number;
 };
 
-const user1: User = {
-  name: "udoy",
-  age: 23,
+type Role = {
+  role: "admin" | "user";
 };
 
-const user2: User = {
+// interface : object type : array, object, function er data er shate kaj korbe
+interface IUser {
+  name: string;
+  age: number;
+  role: "admin" | "user";
+}
+
+type UserWithRole = User & Role;
+
+const user1: UserWithRole = {
+  name: "udoy",
+  age: 23,
+  role: "user",
+};
+
+const user2: IUser = {
   name: "kumar",
   age: 23,
+  role: "admin",
 };
+
+type IsAdmin = boolean;
+
+const isAdmin: IsAdmin = true;
